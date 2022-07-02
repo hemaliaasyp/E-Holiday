@@ -1,0 +1,96 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.bg{
+	position: bottom;
+	background: url("bg4.jpg"); 
+	height: 100vh;
+	background-size: cover;
+	background-repeat: repeat-x;
+	animation: animate 50s linear infinite;
+}
+
+.mobil{
+	position: absolute;
+	bottom: 0;
+	animation:100s move;
+}
+
+@keyframes animate{
+	from{
+		background-position: 0 0;
+	}to{
+		background-position: 100% 0;
+	}
+}
+
+@keyframes move{
+	from{
+		left: 5%;
+	}
+	to{
+		left: 85%;
+	}
+}
+
+.text{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+.text h1{
+	color: #483D8B;
+	font-weight: 800;
+	font-size: 60px;
+	letter-spacing: 2px;
+	position: center;
+	background-color: #D8BFD8;
+	border: 10px double #483D8B;
+	margin-bottom: 10px;
+}
+.text p{
+	color: #483D8B;
+	text-shadow: 2px -2px 15px #56FF67;
+    -webkit-text-text: 0.05em #000;
+	text-transform: capitalize;
+	font-size: 18px;
+	margin-bottom: 30px;
+	padding-top: 0px;;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+.btnone{
+	margin: 0px 10px;
+	border: 2px solid #fabd02;
+	padding: 13px 35px;
+	letter-spacing: 1px;
+	color: #000;
+	border-radius: 30px;
+	background-color: #fabd02;
+	text-decoration: none;
+}
+.btnone:hover{
+	border: 2px solid #fabd02;
+	color: #fabd02;
+	background-color: white;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+header{
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("simpang7.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+}
